@@ -17,8 +17,12 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle(
-        statusBarColor: Colors.black,
-        systemNavigationBarColor: Colors.black,
+        statusBarColor: context.watch<AppThemeProvider>().isDark
+            ? Colors.black
+            : Colors.white,
+        systemNavigationBarColor: context.watch<AppThemeProvider>().isDark
+            ? Colors.black
+            : Colors.white,
       ),
       child: Scaffold(
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
@@ -27,7 +31,9 @@ class _HomePageState extends State<HomePage> {
           elevation: 0.0,
           leading: IconButton(
             icon: Icon(
-              Icons.brightness_3,
+              context.watch<AppThemeProvider>().isDark
+                  ? Icons.brightness_7
+                  : Icons.brightness_3,
               color: Color(0xFF6C63FF),
             ),
             onPressed: () => context.read<AppThemeProvider>().toggleTheme(),
