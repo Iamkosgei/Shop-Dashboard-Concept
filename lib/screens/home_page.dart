@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         appBar: AppBar(
           brightness: Theme.of(context).brightness,
-          elevation: 0.0,
+          elevation: 8.0,
           leading: IconButton(
             icon: Icon(
               context.watch<AppThemeProvider>().isDark
