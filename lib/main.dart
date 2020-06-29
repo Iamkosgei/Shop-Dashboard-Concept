@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:shop_dashboard/app_them.dart';
+import 'providers/app_theme_provider.dart';
 import 'utils/router.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(ChangeNotifierProvider<AppThemeProvider>(
+    create: (context) => AppThemeProvider(),
+    child: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -16,6 +21,8 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         theme: MyAppTheme.lightTheme,
         darkTheme: MyAppTheme.darkTheme,
-        themeMode: ThemeMode.light);
+        themeMode: context.watch<AppThemeProvider>().isDark
+            ? ThemeMode.dark
+            : ThemeMode.light);
   }
 }

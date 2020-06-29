@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shop_dashboard/data/dummy_repo.dart';
+import 'package:shop_dashboard/providers/app_theme_provider.dart';
 import 'package:shop_dashboard/widgets/stat_card.dart';
 import 'package:shop_dashboard/widgets/weekly_bar_chart.dart';
+import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -28,7 +30,7 @@ class _HomePageState extends State<HomePage> {
               Icons.brightness_3,
               color: Color(0xFF6C63FF),
             ),
-            onPressed: () {},
+            onPressed: () => context.read<AppThemeProvider>().toggleTheme(),
           ),
           title:
               Text("Dashboard", style: Theme.of(context).textTheme.headline3),
