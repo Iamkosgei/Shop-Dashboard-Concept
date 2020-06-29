@@ -21,7 +21,7 @@ class _StatCardState extends State<StatCard> {
       padding: EdgeInsets.all(8),
       height: 50,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Theme.of(context).backgroundColor,
         borderRadius: BorderRadius.all(Radius.circular(10)),
         boxShadow: [
           BoxShadow(
@@ -44,11 +44,7 @@ class _StatCardState extends State<StatCard> {
             ),
           ),
           Row(children: <Widget>[
-            Text(widget.figure,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
-                )),
+            Text(widget.figure, style: Theme.of(context).textTheme.headline6),
             Expanded(
                 child: Padding(
               padding: const EdgeInsets.all(8.0),

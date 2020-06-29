@@ -21,7 +21,7 @@ class WeeklyBarChartState extends State<WeeklyBarChart> {
           padding: EdgeInsets.all(8),
           height: 50,
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: Theme.of(context).backgroundColor,
             borderRadius: BorderRadius.all(Radius.circular(10)),
             boxShadow: [
               BoxShadow(
