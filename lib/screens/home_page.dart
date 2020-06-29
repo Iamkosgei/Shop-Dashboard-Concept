@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:shop_dashboard/data/data.dart';
 import 'package:shop_dashboard/data/dummy_repo.dart';
 import 'package:shop_dashboard/widgets/stat_card.dart';
 import 'package:shop_dashboard/widgets/weekly_bar_chart.dart';
@@ -25,7 +24,7 @@ class _HomePageState extends State<HomePage> {
         elevation: 0.0,
         backgroundColor: Colors.white,
         leading: Icon(
-          Icons.home,
+          Icons.brightness_3,
           color: Color(0xFF6C63FF),
         ),
         title: Text("Dashboard",

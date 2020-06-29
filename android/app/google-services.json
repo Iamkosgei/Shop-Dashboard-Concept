@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "824153454804",
+    "firebase_url": "https://test2-a40b2.firebaseio.com",
+    "project_id": "test2-a40b2",
+    "storage_bucket": "test2-a40b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824153454804:android:7e39b871f18899817e2341",
+        "android_client_info": {
+          "package_name": "com.example.shop_dashboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824153454804-ta8l9p9nj4j8r7040cgdmvgtt29ueeii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfI5hPo9rRBIISUNnoAKW3npR5zxu__ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824153454804-ta8l9p9nj4j8r7040cgdmvgtt29ueeii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824153454804:android:4b8bf3dcee79d67b7e2341",
+        "android_client_info": {
+          "package_name": "com.iamkosgei.androidfcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824153454804-ta8l9p9nj4j8r7040cgdmvgtt29ueeii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfI5hPo9rRBIISUNnoAKW3npR5zxu__ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824153454804-ta8l9p9nj4j8r7040cgdmvgtt29ueeii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824153454804:android:0ee75ff6abf416097e2341",
+        "android_client_info": {
+          "package_name": "com.iamkosgei.locationtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824153454804-ta8l9p9nj4j8r7040cgdmvgtt29ueeii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfI5hPo9rRBIISUNnoAKW3npR5zxu__ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824153454804-ta8l9p9nj4j8r7040cgdmvgtt29ueeii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
