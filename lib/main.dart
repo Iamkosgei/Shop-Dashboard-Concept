@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'screens/home_page.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'utils/router.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,11 +12,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
+      onGenerateRoute: Router.generateRoute,
+      initialRoute: '/',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: HomePage(),
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+          textTheme: GoogleFonts.notoSansTextTheme()),
     );
   }
 }

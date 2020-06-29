@@ -32,32 +32,34 @@ class _StatCardState extends State<StatCard> {
           ),
         ],
       ),
-      child: Row(children: <Widget>[
-        Expanded(
-            child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-              Text(
-                widget.title,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: <Widget>[
+          Text(
+            widget.title,
+            style: TextStyle(
+              fontSize: 12,
+              height: 2,
+              color: Color(0xFF6C63FF),
+            ),
+          ),
+          Row(children: <Widget>[
+            Text(widget.figure,
                 style: TextStyle(
-                  fontSize: 12,
-                  height: 2,
-                ),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
+                )),
+            Expanded(
+                child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: LineReportChart(
+                color: widget.color,
+                spots: widget.spots,
               ),
-              Text(
-                widget.figure,
-                style: Theme.of(context)
-                    .textTheme
-                    .headline6
-                    .copyWith(fontWeight: FontWeight.bold, fontSize: 30),
-              ),
-            ])),
-        Expanded(
-            child: LineReportChart(
-          color: widget.color,
-          spots: widget.spots,
-        ))
-      ]),
+            ))
+          ]),
+        ],
+      ),
     );
   }
 }
