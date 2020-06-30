@@ -1,6 +1,10 @@
-# shop_dashboard
+# Shop dashboard concept
 
-A new Flutter project.
+A shop dashboard concept built with flutter and firebase.
+
+# screenshot
+
+![Screenshot](https://user-images.githubusercontent.com/14147462/86120404-ef627500-badc-11ea-95df-cb761de841b3.png)
 
 ## Getting Started
 
